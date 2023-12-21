@@ -1,0 +1,156 @@
+.navbar__btn button {
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    background: rgb(227, 200, 189);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.redes {
+    background-color: rgb(227, 200, 189);
+    display: inline-block;
+    text-align: center;
+
+}
+
+#mi-boton:hover {
+    background-color: lightcoral;
+}
+
+.nav:hover {
+    background-color: rgb(227, 200, 189);
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.enviar {
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 200, 189);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	flex-direction: column;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	margin: 50px auto 20px auto;
+}
+.service {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 220px;
+	width: 340px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 700px;
+}
+
+.front {
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transform-style: preserve-3d;
+	background-image: linear-gradient(45deg, rgb(224, 174, 188),rgb(214, 80, 134));
+	transition: 0.7s;
+}
+
+.back {
+	position: absolute;
+	color: whitesmoke;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transform: rotateX(-180deg);
+	background-image: linear-gradient(45deg, rgb(244 165 192), rgb(143 87 177));
+	transition: 0.7s;
+}
+
+.service:hover .back {
+	transform: rotateX(0deg);
+}
+
+.front h4 {
+	color: white;
+	font-size: 22px;
+	font-weight: 400;
+	transform: translateZ(50px);
+}
+
+.back h3 {
+	display: inline-block;
+	margin: 50px auto 30px auto;
+	transform: translateZ(50px);
+	color: rgb(250, 250, 250);
+}
+
+.back p {
+	margin: 0 40px;
+	transform: translateZ(50px);
+}
+
+.service1 .front {
+	background: linear-gradient(45deg, rgb(224, 174, 188),rgb(214, 80, 134));
+}
+
+.service2 .front {
+	background: linear-gradient(45deg, rgb(244 165 192), rgb(143 87 177));
+}
+
+.service3 .front {
+	background: linear-gradient(45deg, rgb(203 106 153), rgb(242, 196, 212));
+}
+.service:hover .front {
+	transform: rotateX(180deg);
+}
+
+form {
+    width: 70vw;
+	margin: 0 auto;
+}
+
+form .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+form input {
+    width: 48%;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 500;
+	
+}
+
+form p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
